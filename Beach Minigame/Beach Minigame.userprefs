@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Destroy.cs">
+    <Files>
+      <File FileName="Assets\Destroy.cs" Line="115" Column="11" />
+      <File FileName="Assets\Waves.cs" Line="4" Column="37" />
+      <File FileName="c:\Users\srijamalapuram\Documents\Beach Minigame\Assets\TerrainToolkit\Editor\TerrainToolkitEditor.cs" Line="864" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
