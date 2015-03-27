@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour {
 	void Update()
 	{
 		startTime -= Time.deltaTime;
-		currentTime = startTime.ToString ();
+		currentTime = string.Format("{0:0}",startTime);
 		if (startTime <= 0) 
 		{
 			startTime = 0;
@@ -21,6 +21,6 @@ public class Timer : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		GUI.Label (timerRect, currentTime);
+		GUI.Label (timerRect, currentTime, skin.GetStyle("Timer"));
 	}
 }
