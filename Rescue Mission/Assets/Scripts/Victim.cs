@@ -7,6 +7,7 @@ public class Victim : MonoBehaviour {
 	private bool isFollowing;
 	public Transform target;
 	private float minRange = 100;
+	public AudioClip Applause;
 	
 	void Start()
 	{
@@ -16,6 +17,8 @@ public class Victim : MonoBehaviour {
 	{
 		if (co.tag == "Player") 
 		{
+			var audio = GetComponent<AudioSource>();
+			audio.PlayOneShot(Applause);
 			isFollowing = true;
 		}
 	}
