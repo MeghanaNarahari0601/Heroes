@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-[RequireComponent(typeof(AudioClip))]
 public class Cage : MonoBehaviour {
 	public AudioClip unlock;
 
@@ -10,7 +9,8 @@ public class Cage : MonoBehaviour {
 		{
 			print ("Destroyed");
 			Destroy(co1.gameObject);
-			GetComponent<AudioSource>().PlayOneShot(unlock,1);
+			var audio = GetComponent<AudioSource>();
+			audio.PlayOneShot(unlock);
 		}
 	}
 }
