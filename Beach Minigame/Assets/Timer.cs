@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Timer : MonoBehaviour {
-
-	public float startTime;
+	public float Minutes;
+	private float seconds = 0;
 	private string currentTime;
 	
 	public Rect timerRect;
@@ -11,12 +11,18 @@ public class Timer : MonoBehaviour {
 	
 	void Update()
 	{
-		startTime -= Time.deltaTime;
-		currentTime = string.Format("{0:0.0}",startTime);
-		if (startTime <= 0) 
+		
+		if (seconds <= 0) {
+			Minutes--;
+			seconds = 59;
+		}
+		seconds -= Time.deltaTime;
+		currentTime = string.Format("{0:0}:{1:0}",Minutes,seconds);
+		if (Minutes <= 0) 
 		{
-			startTime = 0;
-			Application.Quit();
+			Minutes = 0;
+			seconds = 0;
+			
 		}
 		
 	}
@@ -25,4 +31,5 @@ public class Timer : MonoBehaviour {
 		GUI.Label (timerRect, currentTime, skin.GetStyle("Timer"));
 	}
 }
+
 
