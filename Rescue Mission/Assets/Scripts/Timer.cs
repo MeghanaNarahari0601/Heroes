@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour {
 			seconds = 59;
 		}
 		seconds -= Time.deltaTime;
-		currentTime = string.Format("{0:0}:{1:0}",Minutes,seconds);
+		currentTime = string.Format("{0:0}:{1:00}",Minutes,seconds);
 		if (Minutes <= 0) 
 		{
 			Minutes = 0;
