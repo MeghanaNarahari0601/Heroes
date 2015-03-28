@@ -7,10 +7,9 @@ public class Cage : MonoBehaviour {
 	{
 		if(co1.gameObject.tag == "Cage")		
 		{
-			print ("Destroyed");
-			Destroy(co1.gameObject);
 			var audio = GetComponent<AudioSource>();
 			audio.PlayOneShot(unlock);
+			Destroy(co1.gameObject);
 		}
 	}
 }
