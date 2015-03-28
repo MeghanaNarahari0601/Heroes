@@ -9,9 +9,11 @@ public class Timer : MonoBehaviour {
 	public Rect timerRect;
 	public GUISkin skin;
 
+	public Color normalColor;
+	public Color warningColor;
+
 	void Update()
 	{
-
 		if (seconds <= 0) {
 			Minutes--;
 			seconds = 59;
@@ -28,6 +30,15 @@ public class Timer : MonoBehaviour {
 	}
 	void OnGUI()
 	{
+		GUI.skin = skin;
+		if (Minutes < 2f) {
+			skin.GetStyle ("Timer").normal.textColor = warningColor;
+
+		} else 
+		{
+			
+			skin.GetStyle("Timer").normal.textColor = normalColor;
+		}
 		GUI.Label (timerRect, currentTime, skin.GetStyle("Timer"));
 	}
 }

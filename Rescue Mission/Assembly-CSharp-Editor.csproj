@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{4A4714F2-A49E-4525-F58E-AC88872A6781}</ProjectGuid>
+	<ProjectGuid>{229C1E72-B1D7-8BD8-D237-D72EBBC324B0}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -84,11 +84,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{049DD237-A244-3DC0-BE22-81944D126D40}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{D85270AF-D467-52EC-F10B-609813DD64C3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{28EA9D26-B780-3824-A569-7FAC9D241927}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{EE0B1931-454E-14D0-51CA-CD677A0765D7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{F4241348-16F7-6CB6-118F-8BE1D67BE0F0}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+      <Project>{AED4E87A-3BFF-7020-BACF-9221F4E625C4}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

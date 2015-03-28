@@ -5,6 +5,9 @@ public class Timer : MonoBehaviour {
 	public float Minutes;
 	private float seconds = 0;
 	private string currentTime;
+
+	public Color warningColor;
+	public Color normalColor;
 	
 	public Rect timerRect;
 	public GUISkin skin;
@@ -28,6 +31,12 @@ public class Timer : MonoBehaviour {
 	}
 	void OnGUI()
 	{
+		GUI.skin = skin;
+		if (Minutes < 2f) 
+		{
+			skin.GetStyle("Timer").normal.textColor = warningColor;
+			skin.GetStyle("Timer").normal.textColor = normalColor;
+		}
 		GUI.Label (timerRect, currentTime, skin.GetStyle("Timer"));
 	}
 }
