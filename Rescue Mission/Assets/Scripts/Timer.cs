@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour {
 	{
 		if (seconds <= 0) {
 			Minutes--;
-			seconds = 10;
+			seconds = 59;
 		}
 		seconds -= Time.deltaTime;
 		currentTime = string.Format("{0:0}:{1:00}",Minutes,seconds);
