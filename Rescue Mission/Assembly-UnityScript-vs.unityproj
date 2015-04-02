@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterMotor.js" />
      <Compile Include="Assets\Scripts\FPSInputController.js" />
+     <Compile Include="Assets\Scripts\Walking.js" />
      <None Include="Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Destroyed_city_FREE\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />

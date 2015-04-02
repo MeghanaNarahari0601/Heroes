@@ -5,8 +5,6 @@ public class Victim : MonoBehaviour {
 	public float moveSpeed;
 	public Transform player;
 	private bool isFollowing;
-	public Transform target;
-	private float minRange = 100;
 	public AudioClip Applause;
 	
 	void Start()
@@ -17,20 +15,22 @@ public class Victim : MonoBehaviour {
 	{
 		if (co.tag == "Player") 
 		{
+			isFollowing = true;
 			var audio = GetComponent<AudioSource>();
 			audio.PlayOneShot(Applause);
-			isFollowing = true;
 		}
 	}
 	void Update()
 	{
 		if (isFollowing == true) {
+
 			transform.position = Vector3.MoveTowards (transform.position, player.position, moveSpeed * Time.deltaTime);
 			transform.LookAt (player);
-			float distance = Vector3.Distance(transform.position, target.position);
-			bool tooClose = distance < minRange;
-			Vector3 direction = tooClose ? Vector3.back : Vector3.forward;
-			transform.Translate(direction * Time.deltaTime);
+		
+		}
+		var fwd = transform.TransformDirection (Vector3.forward);
+		if (Physics.Raycast (transform.position, fwd, 1)) {
+			print ("There is something in front of the object!");
 		}
 
 	}

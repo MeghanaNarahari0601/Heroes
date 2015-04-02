@@ -5,11 +5,12 @@ public class Cage : MonoBehaviour {
 
 	void OnTriggerEnter(Collider co1)
 	{
-		if(co1.gameObject.tag == "Cage")		
+		if (co1.gameObject.tag == "Cage") 
 		{
-			var audio = GetComponent<AudioSource>();
-			audio.PlayOneShot(unlock);
-			Destroy(co1.gameObject);
+			var audio = GetComponent<AudioSource> ();
+			audio.PlayOneShot (unlock);
+			Destroy (co1.gameObject);
 		}
+
 	}
 }
