@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+	
 private var motor : CharacterMotor;
 private var fly : FlyCam;
 private var mouselook : MouseLook;

@@ -53,7 +53,7 @@
      <None Include="Assets\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
      <None Include="Assets\TerrainToolkit\Read me.txt" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>/Users/Neel/Heroes/Beach Minigame/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>/Users/Tarun/git/heroes/Heroes/Beach Minigame/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
