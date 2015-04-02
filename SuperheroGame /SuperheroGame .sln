@@ -5,7 +5,7 @@ Project("{776F6C4A-0E49-0643-E3B8-D08C1E3ED884}") = "SuperheroGame ", "Assembly-
 EndProject
 Project("{776F6C4A-0E49-0643-E3B8-D08C1E3ED884}") = "SuperheroGame ", "Assembly-CSharp.csproj", "{AD8A6614-3B3F-F5AC-5873-FCDBAC9FA1E0}"
 EndProject
-Project("{776F6C4A-0E49-0643-E3B8-D08C1E3ED884}") = "SuperheroGame ", "Assembly-UnityScript-firstpass.unityproj", "{FF4B5A9B-CBB8-9BAA-A4FE-99F2132BD901}"
+Project("{776F6C4A-0E49-0643-E3B8-D08C1E3ED884}") = "SuperheroGame ", "Assembly-CSharp-Editor.csproj", "{32D336A7-9BF3-D1FD-BE55-4BB6A33985D4}"
 EndProject
 Project("{776F6C4A-0E49-0643-E3B8-D08C1E3ED884}") = "SuperheroGame ", "Assembly-UnityScript.unityproj", "{A33B89A9-6E17-25A4-40D5-4F73899AD699}"
 EndProject
@@ -23,10 +23,10 @@ Global
 		{AD8A6614-3B3F-F5AC-5873-FCDBAC9FA1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD8A6614-3B3F-F5AC-5873-FCDBAC9FA1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD8A6614-3B3F-F5AC-5873-FCDBAC9FA1E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF4B5A9B-CBB8-9BAA-A4FE-99F2132BD901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF4B5A9B-CBB8-9BAA-A4FE-99F2132BD901}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF4B5A9B-CBB8-9BAA-A4FE-99F2132BD901}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF4B5A9B-CBB8-9BAA-A4FE-99F2132BD901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D336A7-9BF3-D1FD-BE55-4BB6A33985D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D336A7-9BF3-D1FD-BE55-4BB6A33985D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D336A7-9BF3-D1FD-BE55-4BB6A33985D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D336A7-9BF3-D1FD-BE55-4BB6A33985D4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A33B89A9-6E17-25A4-40D5-4F73899AD699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A33B89A9-6E17-25A4-40D5-4F73899AD699}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33B89A9-6E17-25A4-40D5-4F73899AD699}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+																GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -53,4 +53,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
