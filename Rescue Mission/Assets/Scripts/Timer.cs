@@ -22,19 +22,23 @@ public class Timer : MonoBehaviour {
 		currentTime = string.Format("{0:0}:{1:00}",Minutes,seconds);
 		if (Minutes <= 0) 
 		{
-			Minutes = 0;
-			seconds = 0;
-
+			if(seconds <= 0)
+			{
+			Minutes = 0f;
+			seconds = 0f;
+			}
 		}
 
 	}
 	void OnGUI()
 	{
 		GUI.skin = skin;
-		if (Minutes < 2f) {
-			skin.GetStyle ("Timer").normal.textColor = warningColor;
 
-		} else 
+		if (Minutes < 2f) 
+		{
+			skin.GetStyle ("Timer").normal.textColor = warningColor;
+		}
+		else
 		{
 			
 			skin.GetStyle("Timer").normal.textColor = normalColor;
