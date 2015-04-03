@@ -5,7 +5,6 @@ public class Victim : MonoBehaviour {
 	public float moveSpeed;
 	public Transform player;
 	private bool isFollowing;
-	public AudioClip Applause;
 	
 	void Start()
 	{
@@ -16,8 +15,6 @@ public class Victim : MonoBehaviour {
 		if (co.tag == "Player") 
 		{
 			isFollowing = true;
-			var audio = GetComponent<AudioSource>();
-			audio.PlayOneShot(Applause);
 		}
 	}
 	void Update()
