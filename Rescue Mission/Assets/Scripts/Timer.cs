@@ -43,6 +43,7 @@ public class Timer : MonoBehaviour {
 			
 			skin.GetStyle("Timer").normal.textColor = normalColor;
 		}
+	GUI.Butt
 		GUI.Label (timerRect, currentTime, skin.GetStyle("Timer"));
 	}
 }

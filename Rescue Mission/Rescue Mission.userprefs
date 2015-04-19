@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Score.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../OGPC-2015/TheHeroWithin/Assets/Scripts/Audio Slider.js">
     <Files>
-      <File FileName="Assets/Scripts/Cage.cs" Line="9" Column="3" />
-      <File FileName="Assets/Scripts/Victim.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Timer.cs" Line="47" Column="3" />
-      <File FileName="Assets/Scripts/Score.cs" Line="18" Column="24" />
+      <File FileName="../../OGPC-2015/TheHeroWithin/Assets/Scripts/Audio Slider.js" Line="7" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
